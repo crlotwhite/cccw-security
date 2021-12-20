@@ -2,7 +2,7 @@
 const CryptoJS = require("crypto-js");
 
 // (B) SECRET KEY
-var key = "ASECRET";
+var key = md5("!{chatroom}=");
 
 // (C) ENCRYPT
 var cipher = CryptoJS.AES.encrypt("PASSWORD", key);
